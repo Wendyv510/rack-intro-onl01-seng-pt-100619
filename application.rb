@@ -13,7 +13,7 @@ class Application
    end 
    
    def introduction 
-     (Time.now.to_i %2).zero?["<em>Hello,my name is"]:["<strong>Hello,my name is</strong>"]
+     (Time.now.to_i).zero?["<em>Hello,my name is"]:["<strong>Hello,my name is</strong>"]
    end 
 end
 
