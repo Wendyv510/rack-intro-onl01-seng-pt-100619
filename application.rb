@@ -9,7 +9,11 @@ class Application
 #  end
   
    def call(env) 
-     return [200,{'Content-Type' => '}]
+     return [200,{'Content-Type' => 'text/html'}, introduction]
+   end 
+   
+   def introduction 
+     (Time.now.to_i %2).zero?["<em>"]
 
 end
 
